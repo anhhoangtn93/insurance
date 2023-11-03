@@ -2,7 +2,7 @@
 defined('ABSPATH') || exit;
 global $post;
 ?>
-<br class="clear"/>
+<br class="clear" />
 <div>
     <div id="ifw-editor-container">
         <div id="ifw-control-panel">
@@ -23,27 +23,30 @@ global $post;
                                 <div class="section"></div>
                                 <span class="label">Section</span>
                             </div> -->
-                            <ul>
-                                <li data-section="layout">
-                                    <div class="content-item column-1 layout-draggable">
+                            <ul class="layout-wrapper">
+                                <li data-section="layout" class="layout">
+                                    <div class="content-item column-1 layout-draggable" data-type="layout/grid1cols">
+                                        <i class="ifw-icon-columns-1 columns-icon"></i>
                                         <div class="item-title">1 Column</div>
                                     </div>
 
                                 </li>
-                                <li data-section="layout">
-                                    <div class="content-item column-2 layout-draggable">
+                                <li data-section="layout" class="layout">
+                                    <div class="content-item column-2 layout-draggable" data-type="layout/grid2cols">
+                                        <i class="ifw-icon-columns-2 columns-icon"></i>
                                         <div class="item-title">2 Column</div>
-                                    </div>
 
                                 </li>
-                                <li data-section="layout">
-                                    <div class="content-item column-3 layout-draggable">
+                                <li data-section="layout" class="layout">
+                                    <div class="content-item column-3 layout-draggable" data-type="layout/grid3cols">
+                                        <i class="ifw-icon-columns-3 columns-icon"></i>
                                         <div class="item-title">3 Column</div>
                                     </div>
 
                                 </li>
-                                <li data-section="layout">
-                                    <div class="content-item column-4 layout-draggable">
+                                <li data-section="layout" class="layout">
+                                    <div class="content-item column-4 layout-draggable" data-type="layout/grid4cols">
+                                        <i class="ifw-icon-columns-4 columns-icon"></i>
                                         <div class="item-title">4 Column</div>
                                     </div>
 
@@ -56,22 +59,56 @@ global $post;
                             Basic content
                         </div>
                         <div class="content active">
-                            <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+                            <ul class="layout-wrapper">
+                                <li data-section="layout" class="layout">
+                                    <div class="content-item column-1 layout-draggable" data-type="layout/grid1cols">
+                                        <i class="ifw-icon-transfer columns-icon"></i>
+                                        <div class="item-title">Defaut content</div>
+                                    </div>
+
+                                </li>
+                                <li data-section="layout" class="layout">
+                                    <div class="content-item column-2 layout-draggable" data-type="layout/grid2cols">
+                                        <i class="ifw-icon-text columns-icon"></i>
+                                        <div class="item-title">Text</div>
+
+                                </li>
+                                <li data-section="layout" class="layout">
+                                    <div class="content-item column-3 layout-draggable" data-type="layout/grid3cols">
+                                        <i class="ifw-icon-image columns-icon"></i>
+                                        <div class="item-title">Image</div>
+                                    </div>
+                                </li>
+                                <li data-section="layout" class="layout">
+                                    <div class="content-item column-4 layout-draggable" data-type="layout/grid4cols">
+                                        <i class="ifw-icon-button columns-icon"></i>
+                                        <div class="item-title">Button</div>
+                                    </div>
+
+                                </li>
+
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div class="ui tab" data-tab="editor">
-                    Tab 2
+                    <label for="field-label">Label</label>
+                    <input type="text" id="field-label" placeholder="Enter label here..">
                 </div>
                 <div class="ui tab" data-tab="custom-css">
-                    Tab 3
+                    <label for="custom-css-area">Custom css</label>
+                    <textarea name="custom-css-area" id="custom-css-area" cols="38" rows="6"></textarea>
                 </div>
             </div>
         </div>
     </div>
     <div id="ifw-editor-content-wrapper">
         <div id="ifw-editor-content" class="ifw-editor-content-sortable ui-sortable">
-            content
+            <div class="test">item 1</div>
+            <div class="test">item 2</div>
+            <div class="test">item 3</div>
+            <div class="test">item 4</div>
+            <div class="test">item 5</div>
         </div>
     </div>
 </div>
