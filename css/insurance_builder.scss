@@ -1,0 +1,120 @@
+//Margin left for form
+form#post {
+    margin-top: -40px;
+}
+
+#wpwrap {
+    #wpbody-content {
+        .wp-heading-inline {
+            display: none;
+        }
+
+        #postbox-container-1 {
+            display: none;
+        }
+
+        #poststuff {
+            padding-top: 0;
+
+            #post-body {
+                margin-right: 300px;
+
+                #post-body-content {
+                    margin-top: 52px;
+                }
+            }
+        }
+
+
+    }
+}
+
+//Editor bar
+#ifw-editor-container {
+    background-color: white;
+
+    * {
+        box-sizing: border-box;
+    }
+
+    #ifw-control-panel {
+        position: fixed;
+        width: 300px;
+        min-width: 300px;
+        top: 32px;
+        right: 0;
+        height: 100%;
+        z-index: 99;
+
+        .control-panel-fixed {
+            background-color: white;
+            box-shadow: 0 1px 2px 0 rgba(34, 36, 38, 0.15), 0 0 0 1px rgba(34, 36, 38, 0.15);
+            margin-right: 1px;
+            height: 100%;
+            position: relative;
+
+            .menu {
+                padding-top: 0;
+                margin-bottom: 0;
+                border-radius: 0px !important;
+
+                .item {
+                    &.active {
+                        background: none;
+                    }
+
+                    background: rgba(0, 0, 0, 0.05);
+                    ;
+                }
+            }
+
+            .ui {
+                &.tab {
+                    height: 100%;
+                    overflow-y: auto;
+                    padding: 0.5rem calc(0.5rem + 4px);
+
+                    .accordion {
+                        .content {
+                            .content-item {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 4px;
+                                border: 1px solid #bbbbbb;
+                                border-radius: 3px;
+                                padding: 10px 0;
+                                text-align: center;
+                                color: #666666;
+                                position: relative;
+                                -webkit-user-select: none;
+                                -moz-user-select: none;
+                                user-select: none;
+
+                                // .section {
+                                //     display: flex;
+                                //     justify-content: center;
+                                //     align-items: center;
+                                //     height: 50px;
+                                //     margin: 10px;
+                                //     width: 80%;
+                                //     border: 1px dashed #bbbbbb;
+                                // }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#ifw-editor-content-wrapper {
+    #ifw-editor-content {
+        margin: 0 auto;
+        max-width: 980px;
+        min-height: 50px;
+        background-color: white;
+    }
+}
