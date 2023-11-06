@@ -34,20 +34,20 @@ global $post;
                                 <li data-section="layout" class="layout">
                                     <div class="content-item column-2 layout-draggable" data-type="layout/grid2cols">
                                         <i class="ifw-icon-columns-2 columns-icon"></i>
-                                        <div class="item-title">2 Column</div>
+                                        <div class="item-title">2 columns</div>
 
                                 </li>
                                 <li data-section="layout" class="layout">
                                     <div class="content-item column-3 layout-draggable" data-type="layout/grid3cols">
                                         <i class="ifw-icon-columns-3 columns-icon"></i>
-                                        <div class="item-title">3 Column</div>
+                                        <div class="item-title">3 Columns</div>
                                     </div>
 
                                 </li>
                                 <li data-section="layout" class="layout">
                                     <div class="content-item column-4 layout-draggable" data-type="layout/grid4cols">
                                         <i class="ifw-icon-columns-4 columns-icon"></i>
-                                        <div class="item-title">4 Column</div>
+                                        <div class="item-title">4 Columns</div>
                                     </div>
 
                                 </li>
